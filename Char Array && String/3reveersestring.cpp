@@ -34,3 +34,41 @@ int main() {
     cout << "After string: " << ch << endl;  // Output the reversed string
     return 0;
 }
+
+
+
+//without uing function
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ch[100];  // Declare a character array to hold the string
+    cout << "Enter a string: ";
+    cin.getline(ch, 100);  // Read input string including spaces
+    
+    // Output the original string
+    cout << "Before string: " << ch << endl;
+    
+    // Step 1: Find the length of the string
+    int length = 0;
+    while (ch[length] != '\0') {  // Loop until we hit the null terminator
+        length++;
+    }
+    
+    // Step 2: Reverse the string
+    int i = 0;
+    int j = length - 1;
+    while (i < j) {
+        // Swap characters at position i and j
+        char temp = ch[i];
+        ch[i] = ch[j];
+        ch[j] = temp;
+        i++;
+        j--;
+    }
+
+    // Output the reversed string
+    cout << "After string: " << ch << endl;
+
+    return 0;
+}
