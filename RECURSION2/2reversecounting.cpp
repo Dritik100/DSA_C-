@@ -25,5 +25,33 @@ int main() {
 }
 
 
+// #include <iostream>
+// using namespace std;
+
+// void counting(int n) {
+//   // Base case
+//   if (n == 1) {
+//     cout << 1 << " ";
+//     return;
+//   }
+
+//    // Recursive call
+//   counting(n - 1);
+  
+//   // Processing
+//   cout << n << " ";
+  
+ 
+// }
+
+// int main() {
+//   int n;
+//   cout << "Enter the number: ";
+//   cin >> n;
+//   counting(n);
+  
+//   return 0;
+// }
+
 
 
